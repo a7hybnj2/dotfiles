@@ -3,6 +3,8 @@
 -- hyper + c = Center focused window x and y
 -- hyper + x = Center focused window y
 -- hyper + v = Center focused window x
+-- hyper + [ = Maximize focused window y
+-- hyper + ] = Maximize focused window x
 -- shift_hyper + left = Move focused window left 1 monitor
 -- shift_hyper + right = Move focused window right 1 monitor
 
@@ -54,6 +56,32 @@ hs.hotkey.bind(hyper, 'v', function()
 	local x = f
 
 	x.x = ((max.w - f.w) / 2) + max.x
+	win:setFrame(x)
+end)
+
+-- maximize vertically
+hs.hotkey.bind(hyper, '[', function()
+	local win = hs.window.focusedWindow()
+	local f = win:frame()
+	local max = win:screen():frame()
+
+	local x = f
+
+	x.y = max.y
+	x.h = max.h
+	win:setFrame(x)
+end)
+
+-- maximize horizontally
+hs.hotkey.bind(hyper, ']', function()
+	local win = hs.window.focusedWindow()
+	local f = win:frame()
+	local max = win:screen():frame()
+
+	local x = f
+
+	x.x = max.x
+	x.w = max.w
 	win:setFrame(x)
 end)
 
