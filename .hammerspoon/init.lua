@@ -1,3 +1,11 @@
+-- hyper(Alt, Ctrl, Cmd) and shift_hyper(Shift, Alt, Ctrl, Cmd) are the hotkeys to be used with the modifiers
+-- Default MiroWindowsManager keybindings
+-- hyper + c = Center focused window x and y
+-- hyper + x = Center focused window y
+-- hyper + v = Center focused window x
+-- shift_hyper + left = Move focused window left 1 monitor
+-- shift_hyper + right = Move focused window right 1 monitor
+
 hs.window.animationDuration = 0
 
 hyper = { 'alt', 'ctrl', 'cmd' }
