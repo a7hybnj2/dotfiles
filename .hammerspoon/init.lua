@@ -8,6 +8,8 @@
 -- shift_hyper + left = Move focused window left 1 monitor
 -- shift_hyper + right = Move focused window right 1 monitor
 
+-- spoon.MiroWindowsManager.sizes = { 6/5, 4/3, 3/2, 2/1, 3/1, 4/1, 6/1 }
+
 hs.window.animationDuration = 0
 
 hyper = { 'alt', 'ctrl', 'cmd' }
