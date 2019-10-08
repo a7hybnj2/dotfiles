@@ -88,3 +88,5 @@ end)
 -- move focused window to other screen
 hs.hotkey.bind(shift_hyper, 'right', function() hs.window.focusedWindow():moveOneScreenEast(true, true) end)
 hs.hotkey.bind(shift_hyper, 'left', function() hs.window.focusedWindow():moveOneScreenWest(true, true) end)
+
+hs.hotkey.bind(shift_hyper, 'i', function() hs.alert.show(hs.window.focusedWindow()) end)

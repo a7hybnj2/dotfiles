@@ -1,0 +1,2 @@
+# sets the hover delay for the dock to 4 seconds
+defaults write com.apple.Dock autohide-delay -float 4 && killall Dock
